@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+/* Un #id vaut 100 */
+#title {
+    text-align: left;
+}
+
+/* Quand on utilise plusieurs selecteurs le poids s'additionne (ici 10+10) */
+.container .title {
+    text-align: center;
+}
+
+/* Une .class vaut 10 */
+.title {
+    text-align: center;
+}
+
+/* Un element HTML vaut 1 */
+h1 {
+    /* la valeur !important remporte le combat et gagne sur les autres specificity */
+    text-align: center !important;
+}

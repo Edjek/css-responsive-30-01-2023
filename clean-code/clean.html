@@ -1,0 +1,104 @@
+<!-- Je met un commentaire chaque fois que je vois une erreur! -->
+
+<!-- Absence de doctype -->
+<!DOCTYPE html>
+<!-- lang de 'de à 'fr' -->
+<html lang="fr">
+    <head>
+        <!-- Mauvais encodage -->
+        <meta charset="UTF-8" />
+        <!-- Absence de meta viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Absence de la meta IE -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- Keywords stuffing -->
+        <meta name="description" content="Le meiileur site de produit éléctonique" />
+        <!-- Absence de title -->
+        <title>TechLab - le premier distributeur de matériel informatique en France.</title>
+    </head>
+    <body>
+        <!-- Pas de header -->
+        <header id="home">
+            <nav>
+                <!-- Mauvais href(s) -->
+                <a href="#home">Accueil</a>
+                <a href="#produits">Produits</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <!-- On rajoute "main" et "section" pour la semantique -->
+        <main>
+            <section class="hero">
+                <!-- Le titre de la page doit être un h1 -->
+                <h1>Bienvenue sur TechLab.com, le premier distributeur de matériel informatique en France.</h1>
+                <a href="#contact">Contact</a>
+                <a href="#services">Services</a>
+            </section>
+
+            <section id="produits">
+                <!-- On respect l'ordre des headings -->
+                <h2>Nos différents produits</h2>
+                <!-- Utilisation de l'élément sémantique "article" -->
+                <article>
+                    <h3>Carte mère : MSI MAG B550 TOMAHAWK</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro adipisci ut laborum itaque, tenetur hic.</p>
+                    <!-- Ne pas confondre liens et boutons -->
+                    <a href="produits/carte-mere.html">Caractéristiques</a>
+                </article>
+                <article>
+                    <h3>RAM : Corsair Vengeance LPX Black DDR4 2 x 16 Go 3200 MHz CAS 16</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro adipisci ut laborum itaque, tenetur hic.</p>
+                    <a href="produits/corsaire.html">Caractéristiques</a>
+                </article>
+                <article>
+                    <h3>Carte graphique : Gigabyte GeForce RTX 3090 XTREME 24G</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro adipisci ut laborum itaque, tenetur hic.</p>
+                    <a href="produits/carte-graphoque.html">Caractéristiques</a>
+                </article>
+            </section>
+
+            <section id="services">
+                <!-- Ordre des headings -->
+                <h2>Nos services</h2>
+                <div>
+                <!-- Ordre des headings -->
+                    <h3>Réparation d'ordinateur</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni, modi assumenda at laborum praesentium facilis inventore facere a dolorem.</p>
+                    <!-- attribut alt="" obligatoire -->
+                    <img src="laptop.jpg" alt="ordinateur"/>
+                </div>
+                <div>
+                    <h3>Reprise de matériel d'occasion</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia totam molestias ullam, porro ut nam.</p>
+                    <img src="money.jpg" alt="argent"/>
+                </div>
+            </section>
+
+            <section id="contact">
+                <!-- Ordre des headings -->
+                <h2>Une question ? Contactez-nous !</h2>
+                <form>
+                    <label for="toto">Votre mail</label>
+                    <!-- Mauvais type + rajout d'un id -->
+                    <input type="email" name="email" id="toto"/>
+
+                    <!-- Rajout d'un label -->
+                    <label for="name">Nom</label>
+                    <input type="text" name="name" id="name"/>
+
+                    <label for="message" name="message">Votre message</label>
+                    <input type="text" />
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </main>
+
+        <!-- Footer sémantique -->
+        <footer>
+            <div>Tous droits réservés</div>
+        </footer>
+    </body>
+</html>

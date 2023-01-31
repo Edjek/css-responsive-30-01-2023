@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS - Specificity</title>
+        <!-- Grâce à l'extension minify nous pouvons créer un fichier style.min.css! -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <!-- l'attribut style vaut 1000 -->
+            <h1 class="title" id="title" style="text-align: right;">CSS Specificity</h1>
+            <p>
+                La spécificité est le moyen par lequel les navigateurs décident quelles valeurs de propriété CSS d'un élément sont les plus pertinentes et seront appliquées.
+                <br />
+                La spécificité est basée sur les règles, ciblant un élément, composées par différents types de sélecteurs CSS.
+            </p>
+            <p>
+                Considérez la spécificité comme un score/rang qui détermine quelle déclaration de style est finalement appliquée à un élément.
+            </p>
+            <p>
+                Lorsqu'une règle !important est utilisée dans une déclaration de style, cette déclaration est prioritaire par rapport à toute autre déclaration.
+            </p>
+            <p>
+                !important > style="" > #id > .class > html
+
+            </p>
+        </div>
+    </body>
+</html>

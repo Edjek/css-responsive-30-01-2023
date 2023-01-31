@@ -1,0 +1,23 @@
+<--! CodePen -->
+https://codepen.io/dihcar-cesar
+
+<--! Games -->
+https://flexboxfroggy.com/#fr
+https://codepip.com/games/grid-garden/
+
+<--! Validator HTML -->
+https://validator.w3.org/
+
+<--! Validator CSS -->
+https://jigsaw.w3.org/css-validator/
+
+<--! documentation -->
+https://devdocs.io/
+https://www.w3schools.com/
+https://stackoverflow.com/
+
+<--! créer une page en 4 minutes -->
+https://jgthms.com/web-design-in-4-minutes/
+
+<--! site qui decerne des prix aux site design -->
+https://www.awwwards.com/

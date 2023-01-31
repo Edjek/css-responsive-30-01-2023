@@ -1,0 +1,32 @@
+/* Reset les valeurs par défaut */
+
+/* Le plus célèbre */
+/* https://meyerweb.com/eric/tools/css/reset/ */
+
+/* Un mini reset */
+/* https://jgthms.com/minireset.css/ */
+
+/* Normalize | Unifier le CSS sur tout les sites */
+/* https://necolas.github.io/normalize.css/ */
+
+/* Notre petit reset perso */
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 50px auto;
+}
+p {
+    margin: 30px 0;
+}
