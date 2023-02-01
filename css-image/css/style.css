@@ -25,6 +25,7 @@ p {
 .container {
     width: 60%;
     height: 60vh;
+
     margin: 50px auto;
     background-color: rgb(126, 169, 219);
 }
