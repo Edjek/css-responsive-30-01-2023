@@ -9,7 +9,8 @@
 }
 
 /* 3. Sélectionnez tous les éléments qui contiennent la classe "txt" et tous les éléments qui contiennent la classe "article-link" en même temps, et donnez-leur la couleur "darkcyan" */
-.txt, .article-link {
+.txt,
+.article-link {
     color: darkcyan;
 }
 
@@ -19,7 +20,7 @@
 }
 
 /* 5. Sélectionnez les inputs qui contiennent l'attribut type="text" et donnez-leur un fond "slateblue" */
-input[type=text]{
+input[type='text'] {
     background-color: slateblue;
 }
 
@@ -38,12 +39,12 @@ li:not(:nth-child(5)) {
     background-color: midnightblue;
 }
 /* 9. Sélectionnez seulement les liens pointant vers des sites sécurisés(https) et donnez-leur un fond "plum"*/
-a[href^=https] {
+a[href^='https'] {
     background-color: plum;
 }
 
 /* 10. Donnez une couleur de fond "crimson" à la premiere ligne du dernier paragraphe et augmentez la taille de sa première lettre à 50px */
-.final-txt::first-line{
+.final-txt::first-line {
     background-color: crimson;
 }
 

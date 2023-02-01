@@ -9,23 +9,22 @@
     </head>
     <body>
         <div>
-            <h1>Les images responsives (srcset)</h1>
-            <p>L'attribut srcset="" permet de définir une image adaptée au terminal de consultation en ciblant la taille de l'écran, et également la densité de pixels.</p>
+            <h1>Les images responsives</h1>
             <div class="container">
                 <img
-                    srcset="img/stein-egil-liland-1920.jpg 1920w, img/stein-egil-liland-1280.jpg 1280w, img/stein-egil-liland-640.jpg 640w"
-                    sizes="60vw"
-                    src="img/stein-egil-liland-1920.jpg"
+                    srcset="img/landscape-640.jpg 640w, img/landscape-1280.jpg 1280w, img/landscape-1920.jpg 1920w"
+                    sizes="80vw"
+                    src="img/landscape-1920.jpg"
                     alt="un magnifique paysage"
-                    class="container-img"
                 />
             </div>
+
             <div class="container">
-                <picture class="container-img">
-                    <source media="(max-width:640px)" srcset="img/jasmin-chew-640.jpg" />
-                    <source media="(max-width: 1280px" srcset="img/stein-egil-liland-1280.jpg" />
-                    <source media="(max-width: 1920px" srcset="img/stein-egil-liland-1920.jpg" />
-                    <img class="container-img" src="img/stein-egil-liland-3946.jpg" alt="un magnifique paysage" />
+                <picture>
+                    <source media="(max-width: 640px)" srcset="img/jasmin-chew-640.jpg" />
+                    <source media="(max-width:1280px)" srcset="img/landscape-1280.jpg" />
+                    <source media="(max-width:1920px)" srcset="img/landscape-1920.jpg" />
+                    <img src="img/landscape-1920.jpg" alt="un super paysage" />
                 </picture>
             </div>
         </div>
