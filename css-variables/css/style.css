@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Déclaration de variables en CSS */
+:root {
+    --main-cl: rgb(76, 124, 191);
+    --text-cl: #555;
+}
+
+body {
+    /* Pour utiliser une variable, il faut mettre var(--nom-de-la-variable) */
+    color: var(--text-cl);
+    /* background-color: pink; */
+}
+
+a {
+    color: var(--text-cl);
+}
+h1 {
+    color: var(--main-cl);
+}
+
+.btn {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: var(--main-cl);
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    border: 1px solid var(--main-cl);
+    color: var(--main-cl);
+}

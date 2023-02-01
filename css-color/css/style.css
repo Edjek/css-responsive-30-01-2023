@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    margin: 50px auto;
+}
+
+h1 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+pre {
+
+    /* background-color: red; */
+    /* Color name */
+    color: red;
+
+    /* Decimal rgb */
+    color: rgba(255, 0, 0, 0.813);
+
+    /* Decimal rgba | a -> alpha pour la transparence de 0 à 1 */
+    color: rgba(255, 0, 0, 1);
+
+    /* Hex rgb */
+    color: #ff0000;
+
+    /* Hexa rgba */
+    color: #ff0000ff;
+
+    /* hsl (hue, saturation, lightness)  */
+    color: hsl(0deg, 100%, 50%);
+
+    /* hsla (hue, saturation, lightness, alpha)  */
+    color: hsla(0, 100%, 50%, 0.9);
+}
