@@ -1,65 +1,111 @@
+/* article sur l'astuce de Richard Rutter */
+/* https://clagnut.com/blog/348/ */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
-    font-size: 10px;
-}
-body {
-    color: #333;
+    /* tricks de Richard Rutter pour que la taille du texte soit à 10px et que l'on utilise plus facilement les rem */
+    /* font-size: 62.5%; */
+    font-size: 20px;
 }
 
-h1 {
-    font-size: 3em;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+h1,
+h2 {
+    margin: 30px 0;
+    color: #333;
     text-align: center;
 }
 
-.container {
-    background-color: rgb(88, 157, 218);
-    height: 200px;
+p {
+    margin-bottom: 20px;
+}
+
+.unity {
     width: 80%;
     margin: 50px auto;
 }
 
-.container-child {
-    background-color: pink;
-    height: 50%;
-    width: 50%;
+.container {
+    min-width: 400px;
+    max-width: 1080px;
+    width: 90%;
+    min-height: 300px;
+    margin: auto;
+    background-color: beige;
+    color: #333;
 }
 
-.container-2 {
-    background-color: rgb(101, 213, 101);
+.item {
+    width: 400px;
+    min-height: 200px;
+    padding: 10px;
+    background-color: #3199da;
+}
+
+/* % | pourcentage (unité relative au parent) */
+.item1 {
+    background-color: hsl(349, 57%, 64%);
+    width: 50%;
+    /* height: 100%; */
+}
+
+.sub-item1 {
+    width: 50%;
+    height: 50%;
+    background-color: hsl(349, 100%, 78%);
+}
+
+/* px | pixel */
+.item2 {
     width: 300px;
     height: 300px;
-    margin: 50px auto;
 }
 
-.container-3 {
-    background-color: pink;
-    width: 50vw;
-    height: 50vw;
-    margin: 50px auto;
+/* vh (viewport width), vw (viewport height) | unité relative à la taille de l'écran */
+.item3 {
+    width: 33vw;
+    height: 50vh;
+    background-color: hsl(270, 27%, 45%);
 }
 
-.container-child-3 {
-    background-color: rgb(70, 150, 212);
-    height: 20vh;
+.sub-item3 {
+    width: 15vw;
+    height: 15vw;
+    background-color: hsl(270, 67%, 65%);
 }
 
-.container-4 {
-    background-color: rgb(78, 207, 78);
-    width: 20vmax;
-    height: 20vmin;
-    margin: 50px auto;
+/* vmin (viewport max), vmax (viewport min) | unité relative au côté le plus petit ou le plus grand */
+.item4 {
+    width: 90vmin;
+    height: 10vmax;
+    background-color: hsl(303, 83%, 25%);
 }
 
-
-
-.container-5 {
-    background-color: rgb(52, 141, 214);
-    height: 10rem;
-    /* font-size:40px; */
-    margin: 50px auto;
+/* rem, em | emphemeral unit / root empheral unit (unité relative à la police d'écriture) */
+.item5 {
+    font-size: 16px;
     padding: 1em;
+}
+
+.item5 p {
+    font-size: 2rem;
+}
+
+.item5 p:nth-child(2) {
+    font-size: 4vw;
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
 }
