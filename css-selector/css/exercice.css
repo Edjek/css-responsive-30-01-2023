@@ -1,21 +1,53 @@
 /* 1. Sélectionnez seulement les éléments qui ont les classes "title" ET "main-title" en même temps et donnez-leur un background "khaki" */
+.title.main-title {
+    background-color: khaki;
+}
 
 /* 2. Sélectionnez seulement les h2 qui descendent directement d'un élément avec la classe ".content" et donnez-leur la couleur "red" */
+.content > h2 {
+    background-color: red;
+}
 
 /* 3. Sélectionnez tous les éléments qui contiennent la classe "txt" et tous les éléments qui contiennent la classe "article-link" en même temps, et donnez-leur la couleur "darkcyan" */
+.txt, .article-link {
+    color: darkcyan;
+}
 
 /* 4. Selectionnez seulement le bouton qui contient la classe "modify-btn" et qui est directement précédé par le bouton contenant la classe "delete-btn" et donnez-lui un fond "hotpink" */
+.delete-btn + .modify-btn {
+    background-color: hotpink;
+}
 
 /* 5. Sélectionnez les inputs qui contiennent l'attribut type="text" et donnez-leur un fond "slateblue" */
+input[type=text]{
+    background-color: slateblue;
+}
 
 /* 6. Changez la couleur de fond du formulaire en "lightblue" seulement quand un des enfants reçoit le focus */
+form:focus-within {
+    background-color: lightblue;
+}
 
 /* 7. sélectionnez le 4ème élément de la liste et donnez-lui un fond "seagreen" */
+li:nth-child(even) {
+    background-color: seagreen;
+}
 
 /* 8. sélectionnez tous les li sauf le 5ème et donnez-leur un fond "midnightblue" */
-
+li:not(:nth-child(5)) {
+    background-color: midnightblue;
+}
 /* 9. Sélectionnez seulement les liens pointant vers des sites sécurisés(https) et donnez-leur un fond "plum"*/
+a[href^=https] {
+    background-color: plum;
+}
 
 /* 10. Donnez une couleur de fond "crimson" à la premiere ligne du dernier paragraphe et augmentez la taille de sa première lettre à 50px */
+.final-txt::first-line{
+    background-color: crimson;
+}
 
 /* Vous avez besoin de faire deux sélections */
+.final-txt::first-letter {
+    font-size: 50px;
+}
