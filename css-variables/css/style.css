@@ -13,13 +13,16 @@
 body {
     /* Pour utiliser une variable, il faut mettre var(--nom-de-la-variable) */
     color: var(--text-cl);
-    /* background-color: pink; */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
     color: var(--text-cl);
 }
+
 h1 {
+    text-align: center;
+    padding: 20px;
     color: var(--main-cl);
 }
 
