@@ -30,7 +30,7 @@ form:focus-within {
 }
 
 /* 7. sélectionnez le 4ème élément de la liste et donnez-lui un fond "seagreen" */
-li:nth-child(even) {
+li:nth-child(4) {
     background-color: seagreen;
 }
 
@@ -38,6 +38,7 @@ li:nth-child(even) {
 li:not(:nth-child(5)) {
     background-color: midnightblue;
 }
+
 /* 9. Sélectionnez seulement les liens pointant vers des sites sécurisés(https) et donnez-leur un fond "plum"*/
 a[href^='https'] {
     background-color: plum;
@@ -49,6 +50,6 @@ a[href^='https'] {
 }
 
 /* Vous avez besoin de faire deux sélections */
-.final-txt::first-letter {
+/* .final-txt::first-letter {
     font-size: 50px;
-}
+} */

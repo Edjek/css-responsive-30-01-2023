@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: pink; */
+}
+
+.container {
+    background-color: rgb(59, 121, 246);
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #333;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+article {
+    padding: 1em;
+    border: 1px solid #333;
+    background-color: pink;
+}
+
+article:nth-child(1) {
+    grid-column: span 2;
+}
+
+article:nth-child(5) {
+    grid-column: span 3;
+}
+
+article:nth-child(9) {
+    grid-column: span 3;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        display: block;
+    }
+}

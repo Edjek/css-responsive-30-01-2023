@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: pink; */
+}
+
+h1 {
+    font-size: 8vw;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 1.5em;
+    border: 1px solid #333;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+article {
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+article:nth-child(2) {
+    grid-column: span 2;
+}
