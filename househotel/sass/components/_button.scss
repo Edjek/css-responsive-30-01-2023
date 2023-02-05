@@ -4,8 +4,8 @@
     background-color: $main-cl;
     color: #fff;
     font-size: 1.2em;
-}
 
-.btn:hover {
-    background-color: $main-cl-light;
+    &:hover {
+        background-color: $main-cl-dark;
+    }
 }

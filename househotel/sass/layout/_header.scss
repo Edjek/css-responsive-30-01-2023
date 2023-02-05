@@ -1,9 +1,9 @@
 header {
-    height: 65px;
+    min-height: 65px;
     padding: 0 80px;
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
 }
 
 .logo {
@@ -16,22 +16,22 @@ header {
 nav {
     display: flex;
     gap: 15px;
-}
 
-nav a {
-    transition: .3S;
-}
+    a {
+        transition: .3s;
 
-nav a:hover {
-    color: $main-cl;
+        &:hover {
+            color: $main-cl;
+        }
+    }
 }
 
 .lang {
     margin-left: auto;
     display: flex;
     gap: 20px;
-}
 
-.lang img {
-    width: 35px;
+    img {
+        width: 35px;
+    }
 }

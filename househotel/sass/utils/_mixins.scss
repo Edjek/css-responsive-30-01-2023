@@ -1,0 +1,9 @@
+@mixin section-center($min-height, $padding, $gap) {
+    min-height: $min-height;
+    padding: $padding;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: $gap;
+}
